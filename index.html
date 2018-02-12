@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel Constellation Hangman</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h1 class="display-3">Pixel Constellation Hangman</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center lead">
+                <p>Press any key to start playing a stellar game of hangman</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center border border-secondary">
+                <!-- insert image that appears when correct word is guessed -->
+                <img src="http://via.placeholder.com/350x150">
+            </div>
+            <div class="col-12 text-center border border-secondary py-4">
+                <!-- where random word displays -->
+                <h2 id="wordToGuess"></h2>
+            </div>
+            <div class="col-12 text-center border border-secondary py-4">
+                <p>Letters Guessed:</p>
+                <p id="wrongGuesses"></p>
+            </div>
+            <div class="col-6 text-center border border-secondary py-4">
+                <p>Guesses Remaining:</p>
+                <p id="numGuesses"></p>
+            </div>
+            <div class="col-6 text-center border border-secondary py-4">
+                <p>Wins</p>
+                <p id="winCounter"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/javascript/game.js">
+
+    </script>
+</body>
+
+</html>
